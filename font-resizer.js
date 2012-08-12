@@ -1,12 +1,12 @@
 /* Author: Young K. Park (youngkeunpark@gmail.com / github: ozexpert) */
 /* This explains good usage of JS closure */
 
-var fontController = (function(){
+var fontResizer = (function(){
     var defaultSize = 100; // in %, private variable
     var target;
 
     function setSize(){
-        target.css('font-size', defaultSize+'%');
+        target.style.fontSize = defaultSize+'%';
     }
 
     return {
@@ -22,10 +22,10 @@ var fontController = (function(){
             return defaultSize;
         },
         setTarget: function(elem){
-            target = jQuery('#'+elem);
+            target = document.getElementById(elem);
         },
         getTarget: function(){
             return target;
         }
     };
-})(jQuery);
+})();
