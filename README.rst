@@ -10,7 +10,8 @@ This code is impractical, but developed to explain how JavaScript Closure can be
 -----
 Usage
 -----
-fontResizer.setTarget('elementId');
+::
+    fontResizer.setTarget('elementId');
 
-fontResizer.increase(); //to increase font-size
-fontResizer.decrease(); //to decrease font-size
+    fontResizer.increase(); //to increase font-size
+    fontResizer.decrease(); //to decrease font-size
